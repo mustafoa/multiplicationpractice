@@ -74,7 +74,7 @@ function StopMyKeypress() {
     questionBtn.classList.add('col-12');
     let EndTime = localStorage.getItem('HTMLSecond');
     let EndName = localStorage.getItem('HTMLName');
-    sendtelegram(`${EndName} in multiplication ${EndTime} for a second ${AnswerTrue} is correct and ${AnswerFalse} is incorrect`);
+    sendtelegram(`${EndName} in multiplication ${EndTime} seconds ${AnswerTrue} is correct and ${AnswerFalse} is incorrect`);
     resetBtn.classList.remove('d-none');
     document.querySelector('.AboutText').innerHTML = `${EndName} ${EndTime} for a second ${AnswerTrue} is correct and ${AnswerFalse} is answered incorrectly`;
 }
